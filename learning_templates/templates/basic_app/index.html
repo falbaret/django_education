@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<!-- Call the base.html file as a template that's why all the corpsu html line 
+are removed (html, body, head etc...) -->
+{% extends "basic_app/base.html" %}
+    {% block body_block %}
+        <h1>Welcome to index</h1>
+        <!-- <h1>This is an example of template inheritance</h1> -->
+        <h1>{{ text | upper }}</h1><!--|upper convert the text in upper case -->
+        <h1>{{ text | cut:'hello' }}</h1> <!--|cut call the cut function and cut hello--> 
+        <h1>{{ text | cut:'world' }}</h1> <!--|cut call the cut function and cut world--> 
+        <h1>{{ number | add:"99" }}</h1> <!--|add:"99" add 99 to number-->
+
+    {% endblock %}

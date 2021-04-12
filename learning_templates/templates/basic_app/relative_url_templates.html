@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to relative url templates</h1>
+    <!-- declare a relative path for the application that django can find it
+    basic_app refers to the app_name defined in the urls.py file under basic_app -->
+    <a href="{% url 'basic_app:other' %}"> The other page</a>
+    <a href="{% url 'admin:index' %}"> The admin page</a>
+    <a href="{% url 'index' %}"> link to index</a>
+</body>
+</html>
