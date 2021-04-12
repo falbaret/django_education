@@ -27,7 +27,7 @@ SECRET_KEY = '5m52#qm1k54byky=78c#ksd-iqliysj1yi0!)7v%j6pkla$y3a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [albaret.pythonanywhere.com]
+ALLOWED_HOSTS = ['albaret.pythonanywhere.com']
 
 
 # Application definition
